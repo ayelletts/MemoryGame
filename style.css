@@ -1,0 +1,23 @@
+      .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .container #board {
+        display: flex;
+        justify-content: center;
+      }
+      .board {
+        background-color: beige;
+        border: 10px royalblue solid;
+        border-radius: 10px;
+        width: 30%;
+      }
+      .card {
+        width: 120px;
+        height: 150px;
+        background-color: cornflowerblue;
+        border-radius: 10px;
+        border: 2px grey solid;
+        margin: 5px;
+      }
