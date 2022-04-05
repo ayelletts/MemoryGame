@@ -1,13 +1,20 @@
 const cards = ["A", "B", "C", "A", "B", "C"];
-
-shuffle(cards);
-
-for (card of cards) {
-  const element = document.createElement("span");
+init();
+function init() {
+  shuffle(cards);
   const board = document.getElementById("board");
-  element.innerHTML = card;
+  for (ind in cards) {
+    const cardElement = createCard(ind);
+    board.appendChild(cardElement);
+  }
+}
+
+function createCard(ind) {
+  const element = document.createElement("span");
+  element.innerHTML = cards[ind];
+  element.id = ind;
   element.classList.add("card");
-  board.appendChild(element);
+  return element;
 }
 
 function shuffle(array) {
