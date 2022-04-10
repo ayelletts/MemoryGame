@@ -9,7 +9,6 @@ const cards = [
   "H",
   "I",
   "J",
-  "K",
   "A",
   "B",
   "C",
@@ -20,7 +19,6 @@ const cards = [
   "H",
   "I",
   "J",
-  "K",
 ];
 init();
 function init() {
