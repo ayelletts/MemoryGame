@@ -1,29 +1,65 @@
-      .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 10px;
-         justify-content: center;
-        flex-wrap: wrap; 
-        width: 40%;
-      }
-      
-      #board {
-        background-color: beige;
-        border: 5px royalblue solid;
-        border-radius: 10px;
-        /*width: 30%;*/
-      }
-      .card {
-        width: 120px;
-        height: 150px;
-        background-size: 110px 140px;
-        border-radius: 10px;
-        border: 2px grey solid;
-        padding: 60px 40px 40px 45px;
-        color: white;
-        /*margin: 5px;*/
-      }
-      .card:hover{
-        cursor: pointer;
-        box-shadow: 0 0 11px rgb(93, 93, 168); ;
-      }
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 125px);
+  gap: 10px;
+    justify-content: center;
+  flex-wrap: wrap; 
+  width: 80%;
+}
+
+h1 {
+  font-family: 'Sriracha', cursive;
+}
+
+
+#board {
+  background-color: beige;
+  border: 5px rgb(196, 238, 231) solid;
+  border-radius: 10px;
+}
+
+.card {
+  width: 120px;
+  height: 150px;
+  background-color: transparent;
+  background-size: 110px 140px;
+  border-radius: 10px;
+  border: 2px grey solid;
+  padding: 60px 40px 40px 45px;
+  color: white;
+  perspective: 1000px;
+}
+
+.card:hover{
+  cursor: pointer;
+  box-shadow: 0 0 11px rgb(93, 93, 168); ;
+}
+
+#player active{
+  font-weight: bold;
+  font-family: 'Lakki Reddy', cursive;
+}
+
+#player nonActive{
+  font-weight: bold;
+}
+
+[name="player"]{
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+}
+
+#player1,#player2{
+  font-size: 12px;
+  border-color: lightgrey;
+  width: 125px;
+}
+
+.activePlayer{
+  border: plum solid 8px;
+}
+
+#startGame{
+  width: auto;
+}
