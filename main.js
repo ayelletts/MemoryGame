@@ -68,7 +68,7 @@ function init() {
   players[0].myTurn();
   for (let i = 0; i < numOfPairs * 2; i++) {
     imgInd = i >= numOfPairs ? i - numOfPairs : i;
-    cards.push(new Card(i, `./Images/${imgInd}.jpg`));
+    cards.push(new Card(i, `./Images/${imgInd}.JPG`));
   }
 
   //shuffle cards
@@ -105,7 +105,7 @@ function flipCard() {
       // this.innerHTML = cards[ind];
       cards[
         getThisInd(this.id)
-      ].divElement.style.backgroundImage = `url("./Images/${ind}.jpg")`;
+      ].divElement.style.backgroundImage = `url("./Images/${ind}.JPG")`;
       flippedCards.push(cards[getThisInd(this.id)]);
       if (flippedCards.length == 2) {
         if (
